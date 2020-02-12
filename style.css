@@ -1,3 +1,8 @@
 .bg-custom{
-    background-color: rgba(226, 185, 0, 0.651);
+    background-color: rgba(0, 173, 226, 0.651);
+}
+.scrollCustom{
+    position: relative;
+    overflow: auto;
+    height: 180px;
 }
