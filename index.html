@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.css">
     <title>Site com bootstrap</title>
   </head>
   <body>
@@ -245,7 +246,7 @@
          
           <div class="col-12 text-center">
 
-            <h1 class="display-4">Eu bebis? Bizóia aí...</h1>
+            <h1 class="display-4"> Eu bebis? Bizóia aí...</h1>
             <p class="lead">Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!</p>
             <hr>
           </div>
@@ -288,7 +289,7 @@
 
                   <div class="col-sm-6">
 
-                    <p>Casamentiss faiz malandris se pirulitá. In elementis mé pra quem é amistosis quis leo.  </p>
+                    <p> Casamentiss faiz malandris se pirulitá. In elementis mé pra quem é amistosis quis leo.  </p>
 
                   </div>
 
@@ -347,6 +348,87 @@
           </div>
 
         </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12 text-center my-5">
+
+          <h1 class="display-4">Vamos sair tomar um mé?</h1>
+        </div>
+      </div>
+
+        <div class="row justify-content-center mb-5 ">
+
+          <div class="col-sm-12 col-md-10 col-lg-8">
+
+            <form>
+
+              <div class="form-row"> 
+                <div class="form-group col-sm-6">
+                  <label for="inputName">Nome</label>
+                  <input type="text" class="form-control" id="inputName" placeholder="Nome">
+
+                </div>
+
+                <div class="form-group col-sm-6">
+                  <label for="inputLastName">Sobrenome</label>
+                  <input type="text" class="form-control" id="inputLastName" placeholder="Sobrenome">
+
+                </div>    
+
+                <div class="form-group col-sm-6">
+                 <label for="inputBar">Bar mais próximo</label>
+                 <input type="text" class="form-control" id="inputBar" placeholder="Bar mais próximo">
+
+                </div>
+
+                <div class="form-group col-sm-4">
+                 <label for="inputBar">Cep</label>
+                 <input type="text" class="form-control" id="inputCep" placeholder="CEP">
+
+                </div>
+
+                <div class="form-group col-sm-2">
+
+                  <label for="inputEstado">Estado</label>
+                  <select id="inputEstado" class="form-control">
+                    <option selected>Escolha...</option>
+                    <option>SP</option>
+                    <option>RJ</option>
+                    <option>CE</option> 
+                  </select>
+
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-12">
+                  <div class="form-check">
+                   <label class="form-check-label">
+                     <input class="form-check-input" type="checkbox">Desejo saber onde o Cacilds está
+                   </label> 
+                  </div> 
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-sm-12">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right"
+                  data-trigger="focus" title="Quem é o Cacils?" data-content="Cacilds é o famoso Mussum, o cara mais engraçado dos trapalhões.">Quem é Cacilds?</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
 
       </div>
 
@@ -487,5 +569,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+      $(function() {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
   </body>
 </html>
