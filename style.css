@@ -6,3 +6,9 @@
     overflow: auto;
     height: 180px;
 }
+.btn-outline-danger {
+    color: #E1306C;
+}
+.list-group-item-info{
+    color: gray;
+}
